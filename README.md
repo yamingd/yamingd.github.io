@@ -1,3 +1,3 @@
 yamingd.github.com
 ======
-This is yamingd's home
+The home of yamingdeng@gmail.com 

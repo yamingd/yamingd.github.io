@@ -1,5 +1,5 @@
 /*
-	Miniport 2.5 by HTML5 UP
+	ZeroFour 2.5 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -10,110 +10,105 @@
 
 	body
 	{
-		font-size: 13pt;
+		min-width: 1200px;
 	}
 
-	h1
+	body.left-sidebar
 	{
-		font-size: 3.25em;
-		letter-spacing: -0.025em;
 	}
 
-	h2
+		body.left-sidebar #sidebar
+		{
+			margin-right: 1.5em;
+		}
+
+	body.right-sidebar
 	{
-		font-size: 2em;
-		letter-spacing: -0.015em;
 	}
-	
-	h3
+
+		body.right-sidebar #sidebar
+		{
+			margin-left: 1.5em;
+		}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar h2
 	{
 		font-size: 1.5em;
-		letter-spacing: -0.015em;
 	}
-
-	h1, h2, h3, h4, h5, h6
-	{
-		margin: 0 0 0.75em 0;
-	}
-
-	header
-	{
-		margin: 0 0 3em 0;
-	}
-	
-		header > span
-		{
-			font-size: 1.25em;
-		}
-
-	footer
-	{
-		margin: 3em 0 0 0;
-	}
-	
-		footer > p
-		{
-			font-size: 1.25em;
-		}
-	
-	form
-	{
-	}
-	
-		form .button
-		{
-			margin: 0 0.5em 0 0.5em;
-		}
-	
-	.button
-	{
-		padding: 1em 2.35em 1em 2.35em;
-		font-size: 1.1em;
-	}
-
-		.button-big
-		{
-			font-size: 1.5em;
-			letter-spacing: -0.025em;
-		}
-
-	.box
-	{
-		padding: 2em 2em 2.5em 2em;
-	}
-
-		.box h3
-		{
-			margin-bottom: 0.25em;
-		}
-
-		.box .image-centered
-		{
-			margin-bottom: 1.25em;
-		}
-
-		.box .image-full
-		{
-			position: relative;
-			left: 2em;
-			top: 2em;
-			margin: -4em 0 4em -4em;
-			width: auto;
-		}
 
 /*********************************************************************************/
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	.wrapper
+	#header-wrapper
 	{
-		padding: 8em 0 8em 0;
-		text-align: center;
+		padding: 4em 0 0 0;
+		height: 15em;
+	}
+
+		body.homepage #header-wrapper
+		{
+			height: 43em;
+		}
+	
+	#banner-wrapper
+	{
 	}
 	
-		.wrapper-first
+	#main-wrapper
+	{
+	}
+
+		#main-wrapper .main-wrapper-style1,
+		#main-wrapper .main-wrapper-style2,
+		#main-wrapper .main-wrapper-style3
 		{
-			padding-top: 12em;
+			padding: 7em 0 7em 0;
+		}
+	
+	#footer-wrapper
+	{
+		padding: 7em 0 7em 0;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		border-radius: 10px;
+		background: rgba(255,255,255,0.10);
+		padding: 0.75em;
+	}
+
+		#header .inner
+		{
+			position: relative;
+			height: 5.5em;
+			background-image: -moz-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+			background-image: -webkit-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+			background-image: -o-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+			background-image: -ms-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+			background-image: linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
+			border-radius: 8px;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 2px 1px 0px rgba(255,255,255,0.2);
+			text-shadow: -1px -1px 0 rgba(0,0,0,1);
+		}
+	
+		#header h1
+		{
+			position: absolute;
+			left: 1.75em;
+			top: 50%;
+			margin-top: -0.65em;
+			font-size: 1.5em;
+			color: #fff;
 		}
 
 /*********************************************************************************/
@@ -122,88 +117,129 @@
 
 	#nav
 	{
+		position: absolute;
+		right: 2em;
+		top: 0;
+		line-height: 5.5em;
 	}
-
-		#nav a:hover
+	
+		#nav > ul > li
 		{
-			background: #383838;
+			float: left;
+			padding: 0 0.8em 0 0.8em;
 		}
 		
-		#nav a:active
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				color: #fff;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 800;
+				font-size: 0.95em;
+				letter-spacing: 0.075em;
+				padding: 0.5em 0.8em 0.5em 0.8em;
+				border-radius: 6px;
+				outline: 0;
+			}
+
+				#nav > ul > li.active > a,
+				#nav > ul > li.current_page_item > a,
+				#nav > ul > li.active > span,
+				#nav > ul > li.current_page_item > span
+				{
+					background: rgba(0,0,0,0.15);
+					box-shadow: inset 1px 1px 0px 0px rgba(0,0,0,0.025), 1px 1px 0px 0px rgba(255,255,255,0.025);
+				}
+
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+		#nav > ul > li > ul
 		{
-			background: #484848;
+			display: none;
 		}
-	
-		#nav a
+
+	.dropotron
+	{
+		position: relative;
+		background-image: -moz-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
+		background-image: -webkit-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
+		background-image: -o-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
+		background-image: -ms-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
+		background-image: linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
+		border-radius: 8px;
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), inset 0px 2px 1px 0px rgba(255,255,255,0.2), 0px 4px 4px 0px rgba(0,0,0,0.5);
+		text-shadow: -1px -1px 0 rgba(0,0,0,1);
+		padding: 1.5em;
+		line-height: 2.5em;
+		min-width: 15em;
+	}
+
+		.dropotron.level-0
 		{
-			padding: 0.2em 1em 0.2em 1em;
-			margin: 0.6em 0.2em 0.6em 0.2em;
-			font-weight: 600;
-			border-radius: 8px;
-			-moz-transition: background-color .2s ease-in-out;
-			-webkit-transition: background-color .2s ease-in-out;
-			-o-transition: background-color .2s ease-in-out;
-			-ms-transition: background-color .2s ease-in-out;
-			transition: background-color .2s ease-in-out;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			margin-top: -2px;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 4px 4px 0px rgba(0,0,0,0.5);
+		}
+		
+		.dropotron a,
+		.dropotron span
+		{
+			color: #aaa;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: 0.8em;
+			letter-spacing: 0.075em;
+			outline: 0;
+		}
+		
+		.dropotron li:hover > a,
+		.dropotron li:hover > span
+		{
 			color: #fff;
 		}
-		
+
 /*********************************************************************************/
-/* Articles                                                                      */
+/* Banner                                                                        */
 /*********************************************************************************/
 
-	#top
+	#banner
 	{
-		text-align: left;
-	}
-
-		#top .me
-		{
-			width: 20em;
-			height: 20em;
-			margin: 0;
-		}
-
-		#top h1
-		{
-			margin-top: 0.35em;
-		}
-	
-		#top p
-		{
-			font-size: 1.5em;
-			line-height: 1.75em;
-		}
-		
-	#contact
-	{
+		width: 940px;
+		margin: 0 auto;
+		padding: 5em 0 0 0;
+		overflow: hidden;
 	}
 	
-		#contact footer
+		#banner h2
 		{
-			font-size: 0.9em;
 		}
 		
+		#banner p
+		{
+			float: left;
+			text-align: right;
+			width: 60%;
+			line-height: 1.5em;
+		}
+
 /*********************************************************************************/
-/* Copyright                                                                     */
+/* Footer                                                                        */
 /*********************************************************************************/
 
-	#copyright
+	#footer
 	{
-		font-size: 1em;
 	}
 
-		#copyright li
-		{
-			display: inline-block;
-			border-left: solid 1px rgba(0,0,0,0.5);
-			box-shadow: -1px 0px 0px 0px rgba(255,255,255,0.1);
-			padding: 0 1em 0 1em;
-		}
-		
-		#copyright li:first-child
-		{
-			border: 0;
-			box-shadow: none;
-			padding-left: 0;
-		}
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+	}

@@ -1,32 +1,66 @@
 /*
-	Miniport 2.5 by HTML5 UP
+	ZeroFour 2.5 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /*********************************************************************************/
-/* Basic                                                                         */
+/* Basic                                                                        */
 /*********************************************************************************/
 
-	.box
+	.button
 	{
-		border: solid 1px #ddd;
+		-ms-behavior: url('css/PIE.htc');
 	}
 
 /*********************************************************************************/
-/* Icons                                                                         */
+/* Header                                                                        */
 /*********************************************************************************/
 
-	.featured-icon:before
+	#header
 	{
-		font-size: 6em;
 	}
 
+		#header .inner
+		{
+			background: #333;
+		}
+	
 /*********************************************************************************/
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
-	.wrapper
+	#header-wrapper
 	{
-		border-top: solid 1px #ddd;
+	}
+
+	#main-wrapper
+	{
+	}
+
+		#main-wrapper .main-wrapper-style1
+		{
+		}
+
+			#main-wrapper .main-wrapper-style1:before
+			{
+				background: none;
+			}
+
+		#main-wrapper .main-wrapper-style3
+		{
+		}
+
+			#main-wrapper .main-wrapper-style3:before
+			{
+				background: none;
+			}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	.dropotron
+	{
+		background: #333;
 	}

@@ -1,5 +1,5 @@
 /*
-	ZeroFour 2.5 by HTML5 UP
+	Verti 2.5 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -11,104 +11,182 @@
 	body
 	{
 		min-width: 1200px;
+		line-height: 2.25em;
+		min-height: 100%;
 	}
 
-	body.left-sidebar
+	h1, h2, h3, h4, h5, h6
+	{
+		color: #444;
+		font-weight: 800;
+	}
+
+	h2
+	{
+		font-size: 2.25em;
+		margin: 0 0 1.1em 0;
+		line-height: 1em;
+	}
+	
+	h3
+	{
+		font-size: 1.35em;
+		margin: 0 0 2.25em 0;
+	}
+
+	.pad-right
+	{
+		margin-right: 1.5em;
+	}
+
+	.pad-left
+	{
+		margin-left: 1.5em;
+	}
+	
+	body.left-sidebar,
+	body.homepage
 	{
 	}
 
-		body.left-sidebar #sidebar
+		body.left-sidebar #content,
+		body.homepage #content
 		{
-			margin-right: 1.5em;
+			padding-left: 1.75em;
 		}
 
 	body.right-sidebar
 	{
 	}
 
-		body.right-sidebar #sidebar
+		body.right-sidebar #content
 		{
-			margin-left: 1.5em;
+			padding-right: 1.75em;
 		}
-
-/*********************************************************************************/
-/* Sidebar                                                                       */
-/*********************************************************************************/
-
-	#sidebar h2
+	
+	.button
 	{
-		font-size: 1.5em;
+		font-size: 1.35em;
+		padding: 0.8em 1.5em 0.8em 1.5em;
 	}
 
+		.button.big
+		{
+			font-size: 2.25em;
+			padding: 0.8em 0.9em 0.8em 0.9em;
+		}
+
+		.button.fa
+		{
+		}
+
+			.button.fa:before
+			{
+				margin-right: 0.5em;
+				top: 0.05em;
+			}
+	
+	.box
+	{
+		padding: 2em;
+	}
+		
+	.box-feature
+	{
+		padding: 0;
+	}
+		
+		.box-feature .inner
+		{
+			padding: 4em 2em 3em 2em;
+		}
+		
+		.box-feature h2
+		{
+			font-size: 1.35em;
+		}
+
+		.box-feature p
+		{
+			margin: 0;
+		}
+
+		.box-feature .image
+		{
+			position: relative;
+			margin: 0;
+		}
+
+			.box-feature .image img
+			{
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
+/*********************************************************************************/
+/* Widgets                                                                       */
+/*********************************************************************************/
+
+	.widget-thumbnails
+	{
+	}
+
+		.widget-thumbnails .grid
+		{
+			margin: 0 0 3em 0;
+		}
+
+		.widget-thumbnails .image
+		{
+			margin: 0;
+		}
+	
 /*********************************************************************************/
 /* Wrappers                                                                      */
 /*********************************************************************************/
 
 	#header-wrapper
 	{
-		padding: 4em 0 0 0;
-		height: 15em;
+		padding: 4.5em 0 1em 0;
 	}
-
-		body.homepage #header-wrapper
-		{
-			height: 43em;
-		}
 	
-	#banner-wrapper
+	#features-wrapper
 	{
+		padding: 3em 0 3em 0;
 	}
 	
 	#main-wrapper
 	{
+		padding: 5em 0 5em 0;
 	}
-
-		#main-wrapper .main-wrapper-style1,
-		#main-wrapper .main-wrapper-style2,
-		#main-wrapper .main-wrapper-style3
-		{
-			padding: 7em 0 7em 0;
-		}
 	
 	#footer-wrapper
 	{
-		padding: 7em 0 7em 0;
+		padding: 6em 0 8em 0;
 	}
 
 /*********************************************************************************/
-/* Header                                                                        */
+/* Logo                                                                          */
 /*********************************************************************************/
 
-	#header
+	#logo
 	{
-		position: relative;
-		border-radius: 10px;
-		background: rgba(255,255,255,0.10);
-		padding: 0.75em;
 	}
 
-		#header .inner
+		#logo h1
 		{
-			position: relative;
-			height: 5.5em;
-			background-image: -moz-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
-			background-image: -webkit-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
-			background-image: -o-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
-			background-image: -ms-linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
-			background-image: linear-gradient(top, rgba(59,59,59,0.9), rgba(38,38,38,0.9));
-			border-radius: 8px;
-			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 2px 1px 0px rgba(255,255,255,0.2);
-			text-shadow: -1px -1px 0 rgba(0,0,0,1);
+			float: left;
+			margin: 0 0.35em 0 0;
+			padding: 0.25em 0.2em 0.25em 0.2em;
+			font-size: 3.25em;
+			letter-spacing: 0.05em;
 		}
-	
-		#header h1
+
+		#logo span
 		{
-			position: absolute;
-			left: 1.75em;
-			top: 50%;
-			margin-top: -0.65em;
-			font-size: 1.5em;
-			color: #fff;
+			line-height: 4.5em;
+			letter-spacing: 0.025em;
+			font-size: 0.9em;
 		}
 
 /*********************************************************************************/
@@ -118,91 +196,55 @@
 	#nav
 	{
 		position: absolute;
-		right: 2em;
+		right: 0;
 		top: 0;
-		line-height: 5.5em;
+		font-size: 0.9em;
 	}
 	
-		#nav > ul > li
+		#nav ul
 		{
-			float: left;
-			padding: 0 0.8em 0 0.8em;
 		}
-		
-			#nav > ul > li > a,
-			#nav > ul > li > span
+			
+			#nav ul li
 			{
-				color: #fff;
-				text-decoration: none;
-				text-transform: uppercase;
-				font-weight: 800;
-				font-size: 0.95em;
-				letter-spacing: 0.075em;
-				padding: 0.5em 0.8em 0.5em 0.8em;
-				border-radius: 6px;
-				outline: 0;
+				float: left;
+				line-height: 4.5em;
+				padding-left: 1.5em;
 			}
 
-				#nav > ul > li.active > a,
-				#nav > ul > li.current_page_item > a,
-				#nav > ul > li.active > span,
-				#nav > ul > li.current_page_item > span
+				#nav ul li a
 				{
-					background: rgba(0,0,0,0.15);
-					box-shadow: inset 1px 1px 0px 0px rgba(0,0,0,0.025), 1px 1px 0px 0px rgba(255,255,255,0.025);
+					font-weight: 800;
+					letter-spacing: 0.025em;
+					color: #696969;
+					text-decoration: none;
+					border-radius: 6px;
+					padding: 0.5em 1em 0.5em 1em;
+					-moz-transition: background-color .25s ease-in-out;
+					-webkit-transition: background-color .25s ease-in-out;
+					-o-transition: background-color .25s ease-in-out;
+					-ms-transition: background-color .25s ease-in-out;
+					transition: background-color .25s ease-in-out;
 				}
 
-			#nav > ul > li:last-child
+			#nav ul li:hover
 			{
-				padding-right: 0;
 			}
 
-		#nav > ul > li > ul
-		{
-			display: none;
-		}
+				#nav ul li:hover a
+				{
+					background: rgba(255,255,255,0.5);
+				}
 
-	.dropotron
-	{
-		position: relative;
-		background-image: -moz-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
-		background-image: -webkit-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
-		background-image: -o-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
-		background-image: -ms-linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
-		background-image: linear-gradient(top, rgba(38,38,38,0.95), rgba(59,59,59,0.95));
-		border-radius: 8px;
-		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), inset 0px 2px 1px 0px rgba(255,255,255,0.2), 0px 4px 4px 0px rgba(0,0,0,0.5);
-		text-shadow: -1px -1px 0 rgba(0,0,0,1);
-		padding: 1.5em;
-		line-height: 2.5em;
-		min-width: 15em;
-	}
+			#nav ul li.current_page_item
+			{
+			}
 
-		.dropotron.level-0
-		{
-			border-top-left-radius: 0;
-			border-top-right-radius: 0;
-			margin-top: -2px;
-			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 0px 0px 2px rgba(255,255,255,0.075), 0px 4px 4px 0px rgba(0,0,0,0.5);
-		}
-		
-		.dropotron a,
-		.dropotron span
-		{
-			color: #aaa;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-weight: 800;
-			font-size: 0.8em;
-			letter-spacing: 0.075em;
-			outline: 0;
-		}
-		
-		.dropotron li:hover > a,
-		.dropotron li:hover > span
-		{
-			color: #fff;
-		}
+				#nav ul li.current_page_item a
+				{
+					background: #444;
+					color: #fff;
+				}
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -210,22 +252,57 @@
 
 	#banner
 	{
-		width: 940px;
-		margin: 0 auto;
-		padding: 5em 0 0 0;
-		overflow: hidden;
+		padding: 6.25% 6.25% 3.5% 6.25%;
 	}
-	
+
 		#banner h2
 		{
+			font-size: 3.5em;
+			margin: 0.1em 0 0.35em 0;
 		}
-		
+
 		#banner p
 		{
-			float: left;
-			text-align: right;
-			width: 60%;
-			line-height: 1.5em;
+			font-size: 2.75em;
+			line-height: 1.35em;
+			margin: 0;
+		}
+		
+		#banner .button
+		{
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+		
+			#banner .button.fa:before
+			{
+				position: absolute;
+				right: 0.15em;
+				top: 50%;
+				margin-top: -0.5em;
+			}
+
+		#banner .button.alt
+		{
+			margin-bottom: 0;
+		}
+		
+		#banner ul
+		{
+			margin-left: 2em;
+		}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+		#content h3
+		{
+			margin-top: 2.25em;
 		}
 
 /*********************************************************************************/
@@ -235,11 +312,14 @@
 	#footer
 	{
 	}
+	
+		#footer h2
+		{
+			font-size: 1.35em;
+		}
 
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
-
-	#main
+	#copyright
 	{
+		padding: 4em 0 0 0;
+		text-align: center;
 	}
